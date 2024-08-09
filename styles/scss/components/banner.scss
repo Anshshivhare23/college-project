@@ -1,0 +1,83 @@
+.banner-top{
+    @include media-xs{
+        width: 100%;
+    }
+    position: relative;
+    .background-image{
+        background-position-x: center;
+    }
+    .banner-content{
+        padding: 50px 0;
+        @include media-md{
+            margin: 0 0 0 40px ;
+            padding: 27px;
+            padding-bottom: 60px;
+        }
+        .banner-inner-container{
+            max-width:480px;
+            @include media-xs{
+                padding-left: 20px;
+            }
+            @include media-sm{
+                padding-left:20px;
+            }
+          
+            h2{
+                margin:0;
+                font-size: 52px;
+                color: $lightGreenColor;
+                @include media-xs{
+                    font-size: 36px;
+                    padding-right: 60px;
+                }
+                @include media-sm{
+                    font-size: 40px;
+                }
+                @include media-md{
+                    padding-right: 30px;
+                }
+                &:nth-child(2){
+                    color: white;
+                    font-size: 32px;
+                    @include media-md{
+                        font-size: 52px;
+                    }
+                }
+            }
+            p{
+                margin-top: 15px;
+                color: white;
+                font-size: 18px;
+                @include media-xs{
+                    display: none;
+                }
+                @include media-sm{
+                margin: 15px 0 30px 0;
+                font-size: 16px;
+                line-height: 24px;
+                }
+                @include media-md{
+                    font-size: 13px;
+                    line-height: 24px;
+                }
+            }
+            .btn-container{
+                margin-top: 50px;
+                @include media-xs{
+                    margin-top: 30px;
+                }
+               
+                a{
+                    font-size: 16px;
+                    padding: 11px 28px;
+                    &:first-child{
+                        margin-right: 10px;
+                    }
+                    &:last-child{
+                        margin-left: 5px;
+                    }
+                }
+            }
+        }
+    }
+}

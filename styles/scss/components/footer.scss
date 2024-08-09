@@ -1,0 +1,116 @@
+footer{
+    background-color:$blueColor;
+    padding-bottom: 20px;
+    justify-content: center;
+    @include media-md{
+        width: 100%;
+    }
+    @include media-xs{
+        width:100%
+    }
+    .footer-top{
+      padding:5px;
+        .footer-esential{
+
+            border-bottom: 1px solid rgba(255, 255, 255, 0.212);
+            text-align: center;
+            @include media-xs{
+                width: 100%;
+
+            }
+            p{
+
+                color:rgba(255, 255, 255, 0.76);
+                @include media-xs{
+                   color: #e0e0e0;
+                   font-size: 13px;
+                   font-family: Arial, Helvetica, sans-serif;
+                }
+                @include media-sm{
+                    font-size: 13px;
+                }
+                @include media-md{
+                    font-size: 12px;
+                    font-family: Arial, Helvetica, sans-serif;
+                    padding: 15px 0;
+                }
+                a{
+                    color:rgba(255, 255, 255, 0.76);
+                }
+            }
+        }
+
+    }
+    .footer-body{
+    
+        .footer-body-lists{
+            display:flex;
+            flex-direction: row;
+            justify-content: space-around;
+            @include media-xs{
+                flex-direction: column;
+                justify-content: center;
+                text-align: center;
+            }
+            @include media-md{
+                width: 80%;
+                padding-top: 30px;
+            }
+         
+       
+            .footer-body-lists-item{
+            display:flex;
+            flex-direction: column;
+          
+           
+            h4{
+               color: white; 
+               text-transform: uppercase;
+               margin: 4px 0;
+               padding: 10px 0;
+               @include media-sm{
+                   font-size: 13px;
+               }
+
+            }
+           
+                a{
+                    color:rgba(255, 255, 255, 0.815);
+                    text-decoration: none;
+                    padding-top: 10px;
+                   @include media-xs{
+                       font-size: 13px;
+                       text-align: center;
+                   }
+                   @include media-sm{
+                       font-size: 13px;
+                   }
+                 
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                }
+
+            }
+        }
+    }
+    .footer-bootom{
+        text-align: center;
+        p{
+            color: white;
+            padding:20px 0;
+            @include media-xs{
+                font-size: 10px;
+            }
+            @include media-sm{
+                font-size: 13px;
+            }
+            @include media-md{
+                font-size: 13px;
+            }
+        }
+    }
+}
+
+
+
